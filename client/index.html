@@ -8,94 +8,64 @@
     <link rel="stylesheet" href="index.css">
     
 </head>
-<body>
+<!-- <H1>LIFE COACH</H1> -->
     <header class="header">
-        <nav>
-            <div>
-                <a href="./index.html">Home</a>
-                <a href="./availability.html">Availability</a>
-                <a href="./availability.html">Contact</a>
-                <a href="./availability.html">About Us</a>
-                
-             </div> 
-        </nav>
+        <a href="./index.html">Home</a>
+        <a href="./availability.html">Availability</a>
+        <a href="./contact.html">Contact</a>
+        <a href="./about.html">About Us</a>
     </header>
-    
 
-    <main>
-        <div class="flex-container2">
+<br><br/>
 
-            <div class="flex-child magenta">
-              Flex Column 1
-            </div>
-            
-            <div class="flex-child green">
-              Flex Column 2
-            </div>
-            
-          </div>
-
-        <!-- <style>
+ <main>
+       
+     <style>
             section { border:none; padding:10px; overflow:hidden; }
             section > section { float:left; }
             .indent-1 { padding-left:12px; }
-        </style>
-        <section class="sideBySide">
-            <section>
-                <div>
-                    <img src="https://cdn.pixabay.com/photo/2014/10/31/17/41/dancing-dave-minion-510835__480.jpg" alt="mimg">
-                </div>
-            </section>
-            <section>
-                <div>
-                    <p>ON A MISSION TO SAVE lives</p>
-                </div>
-            </section>
-        </section> -->
+    </style>
 
-        <section class="welcome">
-            <div class="">
-                <h1>WELCOME TO YOUR NEW MIND</h1>
-                    <p>This season, let’s focus on gratitude and growth so we can live healthier, wealthier, more fulfilling, passionate and purposeful lives – and so we can help others do the same. Whether that means achieving in business, reigniting your relationship or discovering who you really are, virtual live events, one-on-one coaching and training systems will help close the gap between where you are and where you want to be.</p>
-            </div>
-
-        </section>
-
-        <br><br/>
-
-
-
-
-        <br><br/>
-
-
-        <h2 class="welcome">Click The Brain To View Availability</h2>
-        
-        
-        <div class="welcome" onclick="window.location.href='./availability.html'">
-            <img class="brain" src="https://cdn.pixabay.com/photo/2017/09/14/21/08/brain-2750415_1280.png" alt="">
-            <style id="image">
-            
-                /* body { background-image: url('https://cdn.pixabay.com/photo/2017/09/14/21/08/brain-2750415_1280.png');
-                    background-position:bottom;
-                    background-attachment: fixed;
-                    background-repeat: no-repeat;
-                    background-size: 400px;
-                    width: 1000px;
-                    height: 100px;
-     */
-                 /* } ? */
-            </style>
-        </div>
-
-        <!-- <section id="welcomeDisplay"></section>
-        <button class="welcome"><a href="./availability.html">Availability</a></button>-->
-    </main> 
-
-    <br><br/>
+<section class="flex-container2">
     <section>
-
+        <div id="div1">
+            <p>SAVING LIVES SINCE 95
+                WE HAVE BEEN ON A MISSION TO SAVE LIVES SINCE 1995
+                CONTINUE ON TO LEARN MORE
+            </p>
+        </div>
     </section>
+    <section>
+        <div>
+            <img id="img2" src="https://cdn.pixabay.com/photo/2014/10/31/17/41/dancing-dave-minion-510835__480.jpg" alt="mimg">
+
+        </div>
+    </section>
+
+</section> 
+
+<section class="welcome">
+    <div class="">
+        <h1>WELCOME TO YOUR NEW MIND</h1>
+            <p>This season, let’s focus on gratitude and growth so we can live healthier, wealthier, more fulfilling, passionate and purposeful lives – and so we can help others do the same. Whether that means achieving in business, reigniting your relationship or discovering who you really are, virtual live events, one-on-one coaching and training systems will help close the gap between where you are and where you want to be.
+                <h1 id="clickBrain">Click The Brain To View Availability</h1>
+            </p
+    </div>
+</section>
+
+<br><br/>
+<br><br/>
+
+
+
+
+</main> 
+
+<footer class="footer">
+    <div onclick="window.location.href='./availability.html'"> <img class="brain" src="https://cdn.pixabay.com/photo/2017/09/14/21/08/brain-2750415_1280.png" alt="">
+    </div>
+
+</footer>    
 
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./index.js"></script>

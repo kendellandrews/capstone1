@@ -1,21 +1,22 @@
 const times = require('./db.json')
-let timeId = 11
+let timeId = 1
 
 // get, put, post, delete
 
 module.exports = {
 
-    getTimes: (req, res) => {
+    getBookedTimes: (req, res) => {
         res.status(200).send(times)
     },
 
-    addTimes: (req, res) => {
+    addBooking: (req, res) => {
         
-        const {time, name} = req.body
+        const {time, fname, lname} = req.body
 
         let newTimeObj = {
             id: timeId,
-            name: name,
+            fname: firstName,
+            lname: lastName,
             time: time,
         }
 
@@ -23,9 +24,17 @@ module.exports = {
 
         timeId++
 
-        res.status(200).send(newTimeObj)
+        res.status(200).send(times)
 
     },
+
+    deleteBooking: (req, res) => {
+        const index = times.indexOf(el.id === +req.params.id)
+
+        drinks.splice(index, 1)
+
+        res.status(200).send(times)
+    }
 
 
 }

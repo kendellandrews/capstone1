@@ -10,85 +10,77 @@
 
 <body>
     <header class="header">
-        <nav>
             <a href="./index.html">Home</a>
             <a href="./availability.html">Availability</a>
-            <a href="./availability.html">Contact</a>
-            <a href="./availability.html">About Us</a>
-        </nav>
+            <a href="./contact.html">Contact</a>
+            <a href="./about.html">About Us</a>
     </header>
 
-    <style class="brain" id="image" onclick="window.location.href='./index.html'">
-        
-            body { background-image: url('https://cdn.pixabay.com/photo/2017/09/14/21/08/brain-2750415_1280.png');
-                background-position:bottom;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size: 450px;
-                width: 1000px;
-                height: 100px;
     
-            }
 
-    </style>
-        
-    
-        
-        
-        
+<br><br/>
+<br><br/>
 <section>
-    <div class="dropdown">
-        <button class="link" onclick="displayTimes()">CLICK FOR AVAILABILITY</button>
-        <div class="dropdownMenu">
-            dropdown 
-            content 
-            hello
-        </div>
+    <div class="container2">
+        <!-- <h1>CONTACT FORM</h1> -->
+        <form >
+      
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="time">Choose Time</label>
+          <select id="time" name="time">
+            <option value="9am">9am</option>
+            <option value="12noon">12noon</option>
+            <option value="3pm">3pm</option>
+          </select>
+      
+          <label for="subject">Tell Us More</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input id="submit" type="submit" value="Submit">
+          
+        </form>
+    </div>
+    
+    <div>
+        <input id="delete" type="delete" value="Delete My Appointment">
+      </div>
+
+
+ </section>
         
+<br><br/>
+<br><br/>
+<br><br/>
+<!-- <div id="div3">
+    <style class="brain" id="image" onclick="window.location.href='./index.html'">
+            
+        body { background-image: url('https://cdn.pixabay.com/photo/2017/09/14/21/08/brain-2750415_1280.png');
+            background-position:bottom;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 450px;
+            width: 1000px;
+            height: 100px;
+    
+        }
+    
+    </style>
+</div> -->
+
+
+<footer class="footer">
+    <div onclick="window.location.href='./availability.html'"> <img class="brain" src="https://cdn.pixabay.com/photo/2017/09/14/21/08/brain-2750415_1280.png" alt="">
     </div>
 
-    <div id="darkened" style="display: none;">
-            
-            <div class="flex-container" >
-                <!-- <h4>DARKENED TIMES ARE ALREADY BOOKED</h4> -->
-                <button>9am</button>
-                <button>10am</button>
-                <button>11am</button>
-                <button>12pm</button>
-                <button>1pm</button>
-                <button>2pm</button>
-                <button>3pm</button>
-                <button>4pm</button>
-                <button>5pm</button>
-                <button>6pm</button>
-             </div>
-
-             <div class="form-container">
-                 
-                 <form>
-                    <h4>APPOINTMENT REQUEST</h4>
-                    <label for="fname">First name:</label>
-                    <input type="text" id="fname" name="fname"><br>
-
-                    <label for="lname">Last name:</label><br>
-                    <input type="text" id="lname" name="lname">
-
-                    <label for="date">DATE & TIME:</label><br>
-                    <input type="text" id="lname" name="lname">
-
-                    <label for="notes">NOTES:</label><br>
-                    <input type="text" id="notes" name="notes">
-
-                    <input type="submit">
-
-                  </form>
-             </div>
+</footer> 
     
-            
-        </div>
-</section>
-    
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./index.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="./index.js"></script>
+
 </body>
 </html>

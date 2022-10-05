@@ -7,11 +7,13 @@ app.use(express.json())
 app.use(cors())
 
 const {
-    getTimes,
-    addTimes
+    getBookedTimes,
+    addBooking,
+    deleteBooking,
 } = require('./controller')
 
-app.get('/getTimes', getTimes)
-app.post('/addTimes', addTimes)
+app.get('/getBookedTimes', getBookedTimes)
+app.post('/addBooking', addBooking)
+app.delete('/deleteBooking/:id', deleteBooking)
 
 app.listen(5501, () => console.log('listening on port 5501'))

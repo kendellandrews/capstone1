@@ -1,5 +1,5 @@
 const times = require('./db.json')
-let timeId = 1
+let timeId = 4
 
 // get, put, post, delete
 
@@ -11,13 +11,14 @@ module.exports = {
 
     addBooking: (req, res) => {
         
-        const {time, fname, lname} = req.body
+        const {time, fname, lname, subject} = req.body
 
         let newTimeObj = {
             id: timeId,
-            fname: firstName,
-            lname: lastName,
+            fname: fname,
+            lname: lname,
             time: time,
+            subject: subject,
         }
 
         times.push(newTimeObj)

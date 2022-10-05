@@ -1,31 +1,64 @@
-const baseUrl = 'http://localhost:5501'
+const baseUrl = 'http://localhost:4000'
 
-const showTimes = document.querySelector('#welcomeDisplay')
+
+//Step 1: select HTML elements
+const bookedBtn = document.getElementById('bookedBtn')
+
+
+
+//Step 2: write funtion
+
 
 const getAllBooked = () => {
-    axios.get(`${baseUrl}/getBookedTimes`)
+    axios.get(`/api/getBookedTimes`)
         .then((res) => {
-            displayBookings(res.data)
-            console.log(res.data)
+            const data = res.data;
+            for(let i = 0; i < data.length; i++) {
+                console.log(data[i].time);
+            }
         })
         .catch((err) => {
             console.log(err)
-        })
+        });
+}
 
+const addBooking = (event) => {
+    event.preventDefault();
+    const fname = document.querySelector('#fname')
+    const lname = document.querySelector('#lname')
+    const time = document.querySelector('#time')
+    const subject = document.querySelector('#subject')
+    const obj = {
+        time: time.value,
+        fname: fname.value,
+        lname: lname.value,
+        subject: subject.value,
+
+    }
+
+    axios.post(`/api/addBooking`, obj)
+        .then((res) => {
+            const data = res.data;
+            console.log(data);
+        })
+        .catch((err) => {
+            console.log(err)
+        });
+}
 
 
 
 const deleteBooking = (id) => {
-    axios.delete(`${baseUrl}/${id}`)
+    axios.delete(`/api/deleteBooking/${id}`)
         .then((res) => {
             booking.innerHTML = ''
             displayBookings(res.data)
 
         })
-
-
-
 }
 
-getAllTimes()}
+//Step 3: add event listioner 
 
+bookedBtn.addEventListener('click', getAllBooked)
+document.querySelector('form').addEventListener('submit', addBooking)
+// document.querySelector('#delete').addEventListener('click', deleteBooking)

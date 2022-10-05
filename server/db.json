@@ -2,7 +2,22 @@
     {
         "id": 1,
         "time": "9AM",
+        "fname": "kendell",
+        "lname": "andrews",
+        "notes": "Hello, world"
+    },
+
+    {
+        "id": 2,
+        "time": "12pm",
         "fname": "First Name",
+        "lname": "Last Name",
+        "notes": "Notes"
+    },
+    {
+        "id": 3,
+        "time": "3PM",
+        "fname": "james",
         "lname": "Last Name",
         "notes": "Notes"
     }

@@ -168,6 +168,7 @@ input[type=submit] {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 150px;
 }
 
 
@@ -217,7 +218,6 @@ input[type=delete] {
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
 }
 
 
@@ -250,4 +250,13 @@ input[type=delete]:hover {
   display: flex;
   justify-content: center;
   /* width: 100px; */
+}
+
+#bookedBtn {
+  background-color:cadetblue;
+  color: black ghv gygv gtfcv vftfcvfrt;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+
 }
